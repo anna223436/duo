@@ -1,6 +1,14 @@
 pipeline {
     agent any
     stages {
+        stage('Build Image') {
+            steps {
+                sh '''
+                docker build -t a2234/duo2 .
+                docker push
+                '''
+            }
+        }
         stage('Build') {
             steps {
                 sh '''

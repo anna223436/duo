@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh '''
                 docker build -t a2234/duo2 .
-                docker push
+                docker push a2234/duo2
                 '''
             }
         }

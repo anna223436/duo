@@ -21,7 +21,6 @@ pipeline {
                 sh '''
                 kubectl apply -f backend.yaml
                 kubectl apply -f frontend.yaml
-                kubectl rollout restart deployment backend --namespace=production
                 '''
             }
         }

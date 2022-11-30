@@ -33,7 +33,8 @@ spec:
     spec:
       containers:
       - name: backend
-        image: a2234/duo
+        imagePullPolicy: Always
+        image: a2234/anna-duo:latest
         ports:
         - containerPort: 5500
   

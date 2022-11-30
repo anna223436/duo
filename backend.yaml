@@ -34,7 +34,7 @@ spec:
       containers:
       - name: backend
         imagePullPolicy: Always
-        image: a2234/anna-duo:latest
+        image: gcr.io/lbg-python-cohort-8/anna-duo:latest
         ports:
         - containerPort: 5500
   
